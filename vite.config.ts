@@ -10,11 +10,16 @@ export default defineConfig({
     react(),
     tailwindcss(),
   ],
+  base: '/Web-Jualannnn/',
   resolve: {
     alias: {
       // Alias @ to the src directory
       '@': path.resolve(__dirname, './src'),
     },
+  },
+  build: {
+    outDir: 'docs',
+    emptyOutDir: true,
   },
 
   // File types to support raw imports. Never add .css, .tsx, or .ts files to this.
